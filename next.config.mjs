@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+const nextConfig = {
+    darkMode: 'class',
+    theme: {
+        extend: {}
+      },
+      
+};
 
 export default nextConfig;
