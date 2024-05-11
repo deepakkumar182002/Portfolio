@@ -2,8 +2,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import Spotlight from '../utils/mouse-position';
-// import SpotlightCard from "./Navbar"
-// import Navbar from './Navbar';
+import Image from 'next/image';
 export default function SpotlightCard() {
   useEffect(() => {
     const spotlights = document.querySelectorAll('[data-spotlight]');
@@ -27,7 +26,7 @@ export default function SpotlightCard() {
                   <div className="flex flex-col h-full items-center text-center">
                     <div className="relative inline-flex">
                       <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                      <img className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-01.png" width="200" height="200" alt="Card 01" />
+                      <Image className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-01.png" width="200" height="200" alt="Card 01" />
                     </div>
 
                     <div className="grow mb-5">
@@ -55,7 +54,7 @@ export default function SpotlightCard() {
 
                     <div className="relative inline-flex">
                       <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                      <img className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-02.png" width="200" height="200" alt="Card 02" />
+                      <Image className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-02.png" width="200" height="200" alt="Card 02" />
                     </div>
 
                     <div className="grow mb-5">
@@ -82,7 +81,7 @@ export default function SpotlightCard() {
 
                     <div className="relative inline-flex">
                       <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                      <img className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-03.png" width="200" height="200" alt="Card 03" />
+                      <Image className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-03.png" width="200" height="200" alt="Card 03" />
                     </div>
 
                     <div className="grow mb-5">

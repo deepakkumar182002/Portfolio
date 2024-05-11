@@ -25,7 +25,7 @@ export default function About() {
 
     return (
         <>
-            <div className="relative font-inter antialiased " id='about'>
+            <div className="relative font-inter antialiased" id='about'>
                 <main className="relative min-h-screen flex flex-col justify-start bg-slate-900 overflow-hidden">
                     <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24" >
                         <div className="max-w-sm mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none group" data-spotlight>
@@ -40,14 +40,14 @@ export default function About() {
                                 </div>
                             </div>
 
-                            <div className="mt-2 ml-4 md:w-[600px] w-auto h-auto" data-aos='fade-left'>
+                            <div className="mt-2 md:ml-4 md:w-[600px] w-auto h-auto" data-aos='fade-left'>
                                 <h3 className="text-xl font-bold text-white flex align-self">
                                     <hr className='w-full h-1 bg-white mt-4' />
                                     <span className='text-nowrap text-4xl'> 😊About me</span>
                                 </h3>
                                 <div className="mt-4">
-                                    <p className='-tracking-tighter text-justify font-[200]'>Hello, I’m <span className='text-cyan-400 font-bold'>Deepak kumar</span>, a dedicated and detail-oriented <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> software developer specializing in the <Link href='/' className='text-cyan-400 underline font-bold'>MERN stack</Link>, with an expansive skill set that encompasses both <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> and <Link href='/' className='text-cyan-400 underline font-bold'>Back-end</Link> technologies. With a passion for creating efficient, scalable web applications and a knack for designing intuitive user interfaces, I have consistently driven projects from concept to deployment.</p>
-                                    <p className='pt-4 -tracking-tighter text-justify font-[200]'>Here are a few technologies I’ve been working with recently:</p>
+                                    <p className='-tracking-tighter text-justify font-[200]'>Hello, I&apos;m <span className='text-cyan-400 font-bold'>Deepak kumar</span>, a dedicated and detail-oriented <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> software developer specializing in the <Link href='/' className='text-cyan-400 underline font-bold'>MERN stack</Link>, with an expansive skill set that encompasses both <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> and <Link href='/' className='text-cyan-400 underline font-bold'>Back-end</Link> technologies. With a passion for creating efficient, scalable web applications and a knack for designing intuitive user interfaces, I have consistently driven projects from concept to deployment.</p>
+                                    <p className='pt-4 -tracking-tighter text-justify font-[200]'>Here are a few technologies I&apos;ve been working with recently:</p>
 
                                     <div className=" mt-4 flex flex-row gap-20 ">
                                         <div className="flex flex-col gap-4">

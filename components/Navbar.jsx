@@ -26,7 +26,8 @@ function Navbar() {
                         <div className="flex items-center justify-between">
                             <div className="flex shrink-0">
                                 <a aria-current="page" className="flex items-center" href="/">
-                                    <Image className="h-7 w-auto" src={logo} width={70} height={70} alt="" />
+                                    {/* <Image className="h-7 w-auto" src={logo} width={70} height={70} alt="" /> */}
+                                    <p className="text-2xl font-bold">D e e p <span className="text-cyan-400">.</span></p>
                                     <p className="sr-only">Website Title</p>
                                 </a>
                             </div>
@@ -39,15 +40,15 @@ function Navbar() {
                                     href="#about">About</a>
                                 <a aria-current="page"
                                     className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
-                                    href="#">Work</a>
+                                    href="#work">Work</a>
                                 <a className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
                                     href="#">Chat</a>
                             </div>
                             <div className="flex items-center justify-end gap-3">
                                 <Link className="text-2xl"
-                                    href="/"><FaGithubSquare /></Link>
+                                    href="https://github.com/deepakkumar182002"><FaGithubSquare /></Link>
                                 <Link className="text-2xl"
-                                    href="/"><IoLogoLinkedin /></Link>
+                                    href="https://www.linkedin.com/in/deepakkumar182002/"><IoLogoLinkedin /></Link>
                             </div>
                         </div>
 

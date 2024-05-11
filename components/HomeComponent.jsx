@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import Deep from "../public/PicsArt.jpg"
 import Image from 'next/image';
+import styles from './styles.module.css'; // Assuming your CSS file is named styles.module.css
 
 
 export default function HomeComponent() {
@@ -23,7 +24,7 @@ export default function HomeComponent() {
             {/* <Navbar /> */}
             <div className="relative font-inter antialiased items-center">
                 <main className="relative min-h-screen flex flex-col justify-center items-center bg-slate-900 overflow-hidden">
-                    <div className="p-4 md:h-[600px] md:w-full max-w-sm mt-20 lg:max-w-none group" data-spotlight>
+                    <div className="md:p-4 p-8 md:h-[600px] md:w-full max-w-sm mt-20 lg:max-w-none group" data-spotlight>
                         <div className="relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden">
                             <div className="relative h-full  bg-slate-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
                                 <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
@@ -32,15 +33,12 @@ export default function HomeComponent() {
                                 <div className="flex flex-col h-full items-center text-center">
                                     <Card className="w-96 h-auto bg-transparent">
                                         <CardHeader floated={false} className="h-80 bg-black z-10 opacity-40 hover:opacity-100 cursor-pointer duration-500">
-                                            <Image src={Deep} alt="profile-picture " />
+                                            <Image src={Deep} alt="profile-picture" />
                                         </CardHeader>
 
                                     </Card>
-
-
-
                                     <div className="grow mb-5 mt-4">
-                                        <h2 className="text-4xl text-slate-200 font-bold mb-1" data-aos="fade-up">Hello 👋🏻 I'm Deepak kumar</h2>
+                                        <h2 className="text-4xl text-slate-200 font-bold mb-1" data-aos="fade-up">Hello <span className={styles.wave}>👋🏻</span>I&apos;m Deepak kumar</h2>
                                         <p className="text-sm text-slate-500" data-aos="fade-up">where creativity meets logic, shaping the digital world one line of code at a time.</p>
                                     </div>
                                     <a data-aos="zoom-in" className="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
@@ -58,29 +56,5 @@ export default function HomeComponent() {
                 </main>
             </div>
         </>
-    );
-}
-
-import { Carousel } from "@material-tailwind/react";
-
-export function CarouselTransition() {
-    return (
-        <Carousel transition={{ duration: 2 }} className="rounded-xl">
-            <img
-                src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-                alt="image 1"
-                className="h-full w-full object-cover"
-            />
-            <img
-                src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                alt="image 2"
-                className="h-full w-full object-cover"
-            />
-            <img
-                src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-                alt="image 3"
-                className="h-full w-full object-cover"
-            />
-        </Carousel>
     );
 }
