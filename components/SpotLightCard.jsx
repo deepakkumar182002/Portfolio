@@ -2,7 +2,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import Spotlight from '../utils/mouse-position';
-import Image from 'next/image';
+// import img from 'next/img';
 export default function SpotlightCard() {
   useEffect(() => {
     const spotlights = document.querySelectorAll('[data-spotlight]');
@@ -26,7 +26,7 @@ export default function SpotlightCard() {
                   <div className="flex flex-col h-full items-center text-center">
                     <div className="relative inline-flex">
                       <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                      <Image className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-01.png" width="200" height="200" alt="Card 01" />
+                      <img className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-01.png" width="200" height="200" alt="Card 01" />
                     </div>
 
                     <div className="grow mb-5">
@@ -54,7 +54,7 @@ export default function SpotlightCard() {
 
                     <div className="relative inline-flex">
                       <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                      <Image className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-02.png" width="200" height="200" alt="Card 02" />
+                      <img className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-02.png" width="200" height="200" alt="Card 02" />
                     </div>
 
                     <div className="grow mb-5">
@@ -81,7 +81,7 @@ export default function SpotlightCard() {
 
                     <div className="relative inline-flex">
                       <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                      <Image className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-03.png" width="200" height="200" alt="Card 03" />
+                      <img className="inline-flex" src="https://cruip-tutorials.vercel.app/spotlight-effect/card-03.png" width="200" height="200" alt="Card 03" />
                     </div>
 
                     <div className="grow mb-5">
@@ -102,35 +102,38 @@ export default function SpotlightCard() {
 
 
           </div>
-        </main>
-
-        <footer className="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
-          <a className="text-xs text-slate-500 hover:underline" href="https://cruip.com">&copy;Cruip - Tailwind CSS templates</a>
-        </footer>
-
-
-        <div className={`fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50" :className="bannerOpen ? '' : 'hidden'" x-data="{bannerOpen: true `}>
-          <div className="bg-slate-800 text-sm p-3 md:rounded shadow flex justify-between" >
-            <div className="text-slate-500 inline-flex">
-              <a className="font-medium hover:underline text-slate-300" href="https://cruip.com/how-to-create-a-spotlight-card-hover-effect-with-tailwind-css/" target="_blank">
-                Read Tutorial
-              </a>
-              <span className="italic px-1.5">or</span>
-              <a className="font-medium hover:underline text-indigo-500 flex items-center" href="https://github.com/cruip/cruip-tutorials/blob/main/spotlight-effect/index.html" target="_blank" rel="noreferrer">
-                <span>Download</span>
-                <svg className="fill-indigo-400 ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="9">
-                  <path d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z" />
-                </svg>
-              </a>
-            </div>
-            <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-slate-700" click="bannerOpen = false">
-              <span className="sr-only">Close</span>
-              <svg className="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
-                <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
+      <div class="">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Deepak kumar — 
+            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@The experience life...</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
-            </button>
-          </div>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
         </div>
+      </div>
+        </main>  
       </div >
     </>
   );

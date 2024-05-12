@@ -15,6 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
 html {
   scroll-behavior: smooth;  
 }
@@ -29,10 +30,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
+} */
 
