@@ -15,6 +15,9 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BsFiletypeScss } from "react-icons/bs";
 import { SiJavascript } from "react-icons/si";
+import { SiStrapi } from "react-icons/si";
+import { RiSupabaseFill } from "react-icons/ri";
+import gpt from "../public/chatgpt.png"
 export default function About() {
     useEffect(() => {
         const spotlights = document.querySelectorAll('[data-spotlight]');
@@ -64,6 +67,12 @@ export default function About() {
                                             <Link href='/' className='hover:underline flex gap-2 items-center text-yellow-400'><TbBrandJavascript />JavaScript</Link>
                                             <Link href='/' className='hover:underline flex gap-2 items-center text-blue-400'><RiTailwindCssFill />TailwindCSS</Link>
                                             <Link href='/' className='hover:underline flex gap-2 items-center text-pink-400'><BsFiletypeScss />SCSS</Link>
+                                        </div>
+                                        <div className="flex flex-col gap-4">
+                                            <Link href='/' className='hover:underline flex gap-2 items-center text-purple-900'><Image src={gpt} height={18} width={18} alt="chatgpt" />ChatGPT</Link>
+                                            <Link href='/' className='hover:underline flex gap-2 items-center text-green-500'><RiSupabaseFill />Supabase</Link>
+                                            <Link href='/' className='hover:underline flex gap-2 items-center text-blue-800'><SiStrapi />Starpi</Link>
+
                                         </div>
                                     </div>
                                 </div>
