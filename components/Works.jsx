@@ -39,6 +39,7 @@ export default function SpotlightCard() {
 
     return (
         <>
+
             <div className="relative font-inter antialiased items-center" id="work">
                 <main className="relative min-h-screen flex justify-center flex-col bg-slate-900 overflow-hidden">
                     <div className="md:w-scree flex flex-col md:flex-row md:px-6 py-24" >
@@ -187,34 +188,34 @@ export default function SpotlightCard() {
                                     <Typography color="gray" className='text-justify'>
                                         Discover hands-on IoT device learning with our comprehensive website. Explore a variety of experiments, tutorials, and projects designed to enhance your skills. Ideal for beginners and experts alike, our content covers everything from basic concepts to advanced applications, ensuring you stay ahead in the IoT field. Start learning today!
                                     </Typography >
-                                        <div className="group mt-8 inline-flex flex-wrap w-full md:items-start items-center gap-3">
-                                            <Tooltip content="Next.js" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
-                                                <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
+                                    <div className="group mt-8 inline-flex flex-wrap w-full md:items-start items-center gap-3">
+                                        <Tooltip content="Next.js" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
+                                            <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
                                                 <RiNextjsLine className='text-2xl' />
-                                                </span>
-                                            </Tooltip>
-                                            <Tooltip content="React.js" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
-                                                <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
-                                                    <FaReact   className='text-2xl' />
-                                                </span>
-                                            </Tooltip>
-                                            <Tooltip content="Express.js" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
-                                                <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
-                                                    <SiExpress className='text-2xl' />
-                                                </span>
-                                            </Tooltip>
-                                            <Tooltip content="TailwindCSS" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
-                                                <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
-                                                    <RiTailwindCssFill className='text-2xl' />
-                                                </span>
-                                            </Tooltip>
-                                            
-                                            <Tooltip content="And many more" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
-                                                <span className="z-30 cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
-                                                    +20
-                                                </span>
-                                            </Tooltip>
-                                        </div>
+                                            </span>
+                                        </Tooltip>
+                                        <Tooltip content="React.js" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
+                                            <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
+                                                <FaReact className='text-2xl' />
+                                            </span>
+                                        </Tooltip>
+                                        <Tooltip content="Express.js" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
+                                            <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
+                                                <SiExpress className='text-2xl' />
+                                            </span>
+                                        </Tooltip>
+                                        <Tooltip content="TailwindCSS" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
+                                            <span className="cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
+                                                <RiTailwindCssFill className='text-2xl' />
+                                            </span>
+                                        </Tooltip>
+
+                                        <Tooltip content="And many more" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
+                                            <span className="z-30 cursor-pointer rounded-full border border-gray-200/5 bg-gray-900/5 p-3 text-white transition-colors hover:border-gray-200/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
+                                                +20
+                                            </span>
+                                        </Tooltip>
+                                    </div>
                                 </CardBody>
 
                             </Card>
@@ -427,6 +428,7 @@ export default function SpotlightCard() {
                 </main>
 
             </div >
+
         </>
     );
 }

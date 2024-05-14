@@ -52,7 +52,7 @@ export default function About() {
                                     <p className='-tracking-tighter text-justify font-[200]'>Hello, I&apos;m <span className='text-cyan-400 font-bold'>Deepak kumar</span>, a dedicated and detail-oriented <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> software developer specializing in the <Link href='/' className='text-cyan-400 underline font-bold'>MERN stack</Link>, with an expansive skill set that encompasses both <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> and <Link href='/' className='text-cyan-400 underline font-bold'>Back-end</Link> technologies. With a passion for creating efficient, scalable web applications and a knack for designing intuitive user interfaces, I have consistently driven projects from concept to deployment.</p>
                                     <p className='pt-4 -tracking-tighter text-justify font-[200]'>Here are a few technologies I&apos;ve been working with recently:</p>
 
-                                    <div className=" mt-4 flex flex-row gap-20 ">
+                                    <div className=" mt-4 flex flex-row row-auto md:gap-20 gap-5 text-sm ">
                                         <div className="flex flex-col gap-4">
                                             <Link href='https://legacy.reactjs.org/docs/getting-started.html' className='hover:underline flex gap-2 items-center text-cyan-500'><FaReact />ReactJS</Link>
                                             <Link href='https://nextjs.org/docs' className='hover:underline flex gap-2 items-center'><RiNextjsLine />NextJS</Link>
