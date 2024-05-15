@@ -50,7 +50,7 @@ export default function Patents() {
                                 </div>
                                 <Typography color="gray" className='text-justify'>
                                     <div className='mt-2'>
-                                        I am delighted to share that our patent for the 'Printed Circuit Board' has been officially granted under UK jurisdiction. This outstanding achievement showcases the dedication, expertise, and collaborative spirit of our remarkable team.
+                                        I am delighted to share that our patent for the &apos;Printed Circuit Board&apos; has been officially granted under UK jurisdiction. This outstanding achievement showcases the dedication, expertise, and collaborative spirit of our remarkable team.
                                     </div>
                                     <div className='text-2xl mt-2'>Acknowledgements:</div>
                                     <div className='mt-2 font-[200]'><i>Heartfelt congratulations to</i></div>
@@ -69,7 +69,7 @@ export default function Patents() {
                                         </ul>
                                     </div>
                                     <div className='mt-2'>
-                                        Each member's skills and passion have been instrumental in reaching this milestone. Your hard work and commitment have truly paid off, and I am immensely proud of our collective accomplishments.
+                                        Each member&apos;s skills and passion have been instrumental in reaching this milestone. Your hard work and commitment have truly paid off, and I am immensely proud of our collective accomplishments.
                                     </div>
                                     <div className="text-2xl mt-2">Significance of the Patent</div>
                                     <div className="mt-2 font-[200]">
@@ -77,7 +77,7 @@ export default function Patents() {
                                     </div>
                                     <div className="text-2xl mt-2">Looking Forward</div>
                                     <div className="mt-2 font-[200]">
-                                        I extend my gratitude to everyone who has supported us on this journey. Let us continue to push boundaries, foster innovation, and make a positive impact in the world of technology. Here's to many more achievements ahead!
+                                        I extend my gratitude to everyone who has supported us on this journey. Let us continue to push boundaries, foster innovation, and make a positive impact in the world of technology. Here&apos;s to many more achievements ahead!
                                     </div>
                                     <div className="text-2xl mt-2">Design Details:</div>
                                     <ul className='flex-row mt-2 list-disc ml-4'>
@@ -90,7 +90,7 @@ export default function Patents() {
                                     </ul>
                                     <div className="text-2xl mt-2">Certified by:</div>
                                     <div className="mt-2 font-[200]">Adam Williams, Comptroller-General of Patents, Designs and Trade Marks, Intellectual Property Office</div>
-                                    <div className="mt-4 font-[100]"><i>This certification is a testament to our team's dedication and is a significant milestone in our journey of innovation and excellence in technology.</i></div>
+                                    <div className="mt-4 font-[100]"><i>This certification is a testament to our team&apos;s dedication and is a significant milestone in our journey of innovation and excellence in technology.</i></div>
                                 </Typography>
                                 <div className="group mt-8 inline-flex flex-wrap w-full md:items-start items-center gap-3">
                                     <Tooltip content="AutoDesk Fusion360" className="relative z-30 backdrop-blur-sm bg-slate-200 text-slate-950">
