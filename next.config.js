@@ -2,7 +2,10 @@
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    /* config options here */
+    darkMode: 'class',
+    theme: {
+        extend: {}
+      },
   }
    
   module.exports = nextConfig
