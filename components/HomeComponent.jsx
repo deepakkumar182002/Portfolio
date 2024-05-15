@@ -9,6 +9,7 @@ import {
 import Deep from "../public/PicsArt.jpg"
 import Image from 'next/image';
 import styles from './styles.module.css'; // Assuming your CSS file is named styles.module.css
+import Link from 'next/link';
 
 
 export default function HomeComponent() {
@@ -41,12 +42,12 @@ export default function HomeComponent() {
                                         <h2 className="text-4xl text-slate-200 font-bold mb-1" data-aos="fade-up">Hello <span className={styles.wave}>👋🏻</span>I&apos;m Deepak kumar</h2>
                                         <p className="text-sm text-slate-500" data-aos="fade-up">where creativity meets logic, shaping the digital world one line of code at a time.</p>
                                     </div>
-                                    <a data-aos="zoom-in" className="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
+                                    <Link data-aos="zoom-in" className="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
                                         <svg className="fill-slate-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="14">
                                             <path d="M12.82 8.116A.5.5 0 0 0 12 8.5V10h-.185a3 3 0 0 1-2.258-1.025l-.4-.457-1.328 1.519.223.255A5 5 0 0 0 11.815 12H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM12.82.116A.5.5 0 0 0 12 .5V2h-.185a5 5 0 0 0-3.763 1.708L3.443 8.975A3 3 0 0 1 1.185 10H1a1 1 0 1 0 0 2h.185a5 5 0 0 0 3.763-1.708l4.609-5.267A3 3 0 0 1 11.815 4H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM1 4h.185a3 3 0 0 1 2.258 1.025l.4.457 1.328-1.52-.223-.254A5 5 0 0 0 1.185 2H1a1 1 0 0 0 0 2Z" />
                                         </svg>
                                         <span>My Resume</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

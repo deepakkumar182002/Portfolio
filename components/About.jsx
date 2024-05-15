@@ -37,20 +37,20 @@ export default function About() {
                                     <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
                                         <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
                                     </div>
-                                    <div className=" relative rounded-lg hover:bg-cyan-600 duration-300">
+                                    <div className="relative rounded-lg hover:bg-cyan-600 duration-300">
                                         <Image src={deep} className='rounded-lg hover:opacity-70 cursor-pointer' alt="" />
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="mt-2 md:ml-4 md:w-[600px] w-auto h-auto" data-aos='fade-left'>
-                                <h3 className="text-xl font-bold text-white flex align-self">
+                            <div className=" mt-2 md:ml-4 md:w-[600px] w-auto h-auto" data-aos='fade-left'>
+                                <div className="text-xl font-bold text-white flex align-self">
                                     <hr className='w-full h-1 bg-white mt-4' />
                                     <span className='text-nowrap text-4xl'> 😊About me</span>
-                                </h3>
+                                </div>
                                 <div className="mt-4">
-                                    <p className='-tracking-tighter text-justify font-[200]'>Hello, I&apos;m <span className='text-cyan-400 font-bold'>Deepak kumar</span>, a dedicated and detail-oriented <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> software developer specializing in the <Link href='/' className='text-cyan-400 underline font-bold'>MERN stack</Link>, with an expansive skill set that encompasses both <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> and <Link href='/' className='text-cyan-400 underline font-bold'>Back-end</Link> technologies. With a passion for creating efficient, scalable web applications and a knack for designing intuitive user interfaces, I have consistently driven projects from concept to deployment.</p>
-                                    <p className='pt-4 -tracking-tighter text-justify font-[200]'>Here are a few technologies I&apos;ve been working with recently:</p>
+                                    <div className='-tracking-tighter text-justify font-[200]'>Hello, I&apos;m <span className='text-cyan-400 font-bold'>Deepak kumar</span>, a dedicated and detail-oriented <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> software developer specializing in the <Link href='/' className='text-cyan-400 underline font-bold'>MERN stack</Link>, with an expansive skill set that encompasses both <Link href='/' className='text-cyan-400 underline font-bold'>Front-end</Link> and <Link href='/' className='text-cyan-400 underline font-bold'>Back-end</Link> technologies. With a passion for creating efficient, scalable web applications and a knack for designing intuitive user interfaces, I have consistently driven projects from concept to deployment.</div>
+                                    <div className='pt-4 -tracking-tighter text-justify font-[200]'>Here are a few technologies I&apos;ve been working with recently:</div>
 
                                     <div className=" mt-4 flex flex-row row-auto md:gap-20 gap-5 text-sm ">
                                         <div className="flex flex-col gap-4">
