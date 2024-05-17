@@ -29,13 +29,13 @@ function Navbar() {
                   className="flex items-center"
                   href="/"
                 >
-                  {/* <Image className="h-7 w-auto" src={logo} width={70} height={70} alt="" /> */}
-                  <div className="text-2xl font-bold">
+                  
+                  <div className="md:text-2xl font-bold">
                     D e e p <span className="text-cyan-400">.</span>
                   </div>
                 </Link>
               </div>
-              <div className="hidden md:flex md:items-center md:justify-center md:gap-5">
+              <div className="flex md:flex md:items-center md:justify-center md:gap-5">
                 <Link
                   aria-current="page"
                   className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
@@ -64,15 +64,15 @@ function Navbar() {
                   Patents
                 </Link>
               </div>
-              <div className="flex items-center justify-end gap-3">
+              <div className="hidden md:flex items-center justify-end gap-3">
                 <Link
-                  className="text-2xl"
+                  className="md:text-2xl"
                   href="https://github.com/deepakkumar182002"
                 >
                   <FaGithubSquare />
                 </Link>
                 <Link
-                  className="text-2xl"
+                  className="md:text-2xl"
                   href="https://www.linkedin.com/in/deepakkumar182002/"
                 >
                   <IoLogoLinkedin />

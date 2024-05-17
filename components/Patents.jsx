@@ -21,7 +21,7 @@ function Patents() {
             className="flex justify-center items-center"
             data-aos="fade-right"
           >
-            <div className="text-2xl text-slate-700 absolute  backdrop-blur-sm bg-white/20 p-2">
+            <div className="md:text-2xl text-[8px] text-[8px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
               Granted
             </div>
             <Image
@@ -51,7 +51,7 @@ function Patents() {
             className="flex justify-center items-center"
             data-aos="fade-up"
           >
-            <div className="text-2xl text-slate-700 absolute  backdrop-blur-sm bg-white/20 p-2">
+            <div className="md:text-2xl text-[8px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
               Granted
             </div>
             <Image
@@ -65,7 +65,7 @@ function Patents() {
             className="flex justify-center items-center"
             data-aos="fade-up"
           >
-            <div className="text-3xl text-slate-700 absolute  backdrop-blur-sm bg-white/20 p-2">
+            <div className="md:text-2xl text-[8px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
               Granted
             </div>
 
@@ -80,7 +80,7 @@ function Patents() {
             className="flex justify-center items-center"
             data-aos="fade-up"
           >
-            <div className="text-2xl text-slate-700 absolute  backdrop-blur-sm bg-white/20 p-2">
+            <div className="md:text-2xl text-[15px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
               Granted
             </div>
 
@@ -97,7 +97,7 @@ function Patents() {
             className="flex justify-center items-center"
             data-aos="fade-up"
           >
-            <div className="text-2xl text-slate-700 absolute  backdrop-blur-sm bg-white/20 p-2">
+            <div className="md:text-2xl text-[8px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
               Granted
             </div>
             <Image
@@ -111,7 +111,7 @@ function Patents() {
             className="flex justify-center items-center"
             data-aos="fade-up"
           >
-            <div className="text-2xl text-slate-700 absolute  backdrop-blur-sm bg-white/20 p-2">
+            <div className="md:text-2xl text-[8px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
               Granted
             </div>
             <Image
