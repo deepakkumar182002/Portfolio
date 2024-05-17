@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-import logo from '../public/icon.png';
 import { IoLogoLinkedin } from 'react-icons/io5';
 import { FaGithubSquare } from 'react-icons/fa';
 import React, { useEffect } from 'react';
