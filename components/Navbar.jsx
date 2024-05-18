@@ -29,7 +29,6 @@ function Navbar() {
                   className="flex items-center"
                   href="/"
                 >
-                  
                   <div className="md:text-2xl font-bold">
                     D e e p <span className="text-cyan-400">.</span>
                   </div>
