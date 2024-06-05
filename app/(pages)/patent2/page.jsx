@@ -8,7 +8,6 @@ import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { SiAutodesk, SiExcalidraw } from 'react-icons/si';
 import { Card, CardBody, Typography, Tooltip } from '@material-tailwind/react';
 import { TiArrowBack } from 'react-icons/ti';
-
 import v1 from './img/perspective.png';
 import v2 from './img/front view.png';
 import v3 from './img/bottum.png';
