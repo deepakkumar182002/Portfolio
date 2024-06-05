@@ -6,6 +6,12 @@ import Navbar from '../components/Navbar';
 import HomeComponent from '@/components/HomeComponent';
 import About from '@/components/About';
 import Patents from '../components/Patents';
+import { GoProjectSymlink } from "react-icons/go";
+import { CgUserlane } from "react-icons/cg";
+import { FaAward } from "react-icons/fa";
+import { PiCertificate } from "react-icons/pi";
+
+import Link from 'next/link';
 
 function Home() {
   useEffect(() => {
@@ -16,6 +22,25 @@ function Home() {
   }, []);
   return (
     <>
+      <div className="h-auto justify-center flex flex-col fixed z-50 top-[200px] left-4 md:left-3 md:top-64 gap-4">
+        <Link href="#about" className='-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300'>
+          <CgUserlane className='text-3xl md:text-4xl fixed ' />
+          <span className='text-xl relative left-10 '>About</span>
+        </Link>
+        <Link href="#work" className='-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex p-2 items-center  w-12 overflow-hidden hover:w-28 duration-300'>
+          <GoProjectSymlink className='text-4xl fixed' />
+          <span className='text-xl relative left-10 '>Work</span>
+        </Link>
+        <Link href="#patents" className='-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex p-2 items-center w-12 overflow-hidden hover:w-32 duration-300'>
+          <FaAward className='text-4xl fixed' />
+          <span className='text-xl relative left-10 '>Patents</span>
+        </Link>
+        <Link href="/paper" className='-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex p-2 items-center w-12 text-nowrap overflow-hidden hover:w-72 duration-300'>
+          <PiCertificate className='text-4xl fixed' />
+          <span className='text-xl relative left-10 '>Licenses & Certifications</span>
+        </Link>
+
+      </div>
       <Navbar />
       <HomeComponent />
       <div className="relative font-inter antialiased items-center">
