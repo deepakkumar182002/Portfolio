@@ -18,7 +18,7 @@ export default function HomeComponent() {
   return (
     <>
       {/* <Navbar /> */}
-      
+
       <div className="relative font-inter antialiased items-center">
         <main className="relative min-h-screen flex flex-col justify-center items-center bg-slate-900 overflow-hidden">
           <div
