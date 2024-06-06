@@ -111,7 +111,7 @@ function Home() {
                   </svg>
                 </a>
                 <a
-                href='https://x.com/Deepakk24578803' 
+                href="https://x.com/Deepakk24578803" 
                 className="ml-3 text-gray-500">
                   <svg
                     fill="currentColor"
