@@ -32,23 +32,23 @@ function Home() {
         </Link>
         <Link
           href="#work"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex p-2 items-center  w-12 overflow-hidden hover:w-28 duration-300"
+          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center  md:w-12 w-10 overflow-hidden hover:w-28 duration-300"
         >
-          <GoProjectSymlink className="text-4xl fixed" />
+          <GoProjectSymlink className="text-3xl md:text-4xl fixed" />
           <span className="text-xl relative left-10 ">Work</span>
         </Link>
         <Link
           href="#patents"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex p-2 items-center w-12 overflow-hidden hover:w-32 duration-300"
+          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
         >
-          <FaAward className="text-4xl fixed" />
+          <FaAward className="text-3xl md:text-4xl fixed" />
           <span className="text-xl relative left-10 ">Patents</span>
         </Link>
         <Link
           href="/paper"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex p-2 items-center w-12 text-nowrap overflow-hidden hover:w-72 duration-300"
+          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 text-nowrap overflow-hidden hover:w-72 duration-300"
         >
-          <PiCertificate className="text-4xl fixed" />
+          <PiCertificate className="text-3xl md:text-4xl fixed" />
           <span className="text-xl relative left-10 ">
             Licenses & Certifications
           </span>
@@ -97,7 +97,8 @@ function Home() {
                 </a>
               </div>
               <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a className="text-gray-500">
+                <a className="text-gray-500"
+                 >
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
@@ -109,7 +110,9 @@ function Home() {
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a className="ml-3 text-gray-500">
+                <a
+                href='https://x.com/Deepakk24578803' 
+                className="ml-3 text-gray-500">
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
