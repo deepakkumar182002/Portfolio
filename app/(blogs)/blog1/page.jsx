@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
@@ -13,8 +14,16 @@ import img5 from '../img/animate.gif';
 import img6 from '../img/featurers.png';
 
 export default function Post() {
+  const [currentUrl, setCurrentUrl] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setCurrentUrl(window.location.href);
+    }
+  }, []);
+
   const shareUrl = (platform) => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(currentUrl);
     const text = encodeURIComponent('Check out this awesome portfolio!');
 
     switch (platform) {
