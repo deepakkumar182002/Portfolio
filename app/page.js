@@ -8,10 +8,10 @@ import About from '@/components/About';
 import Patents from '../components/Patents';
 import { GoProjectSymlink } from 'react-icons/go';
 import { CgUserlane } from 'react-icons/cg';
-import { FaAward } from 'react-icons/fa';
+import { FaAward, FaBlog } from 'react-icons/fa';
 import { PiCertificate } from 'react-icons/pi';
-
 import Link from 'next/link';
+import Blogs from '@/components/Blogs';
 
 function Home() {
   useEffect(() => {
@@ -23,6 +23,13 @@ function Home() {
   return (
     <>
       <div className="h-auto justify-center flex flex-col fixed z-50 top-[200px] left-4 md:left-3 md:top-64 gap-4">
+        <Link
+          href="#blogs"
+          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
+        >
+          <FaBlog className="text-3xl md:text-4xl fixed " />
+          <span className="text-xl relative left-10 ">Blogs</span>
+        </Link>
         <Link
           href="#about"
           className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
@@ -78,6 +85,12 @@ function Home() {
                       My All Patents And Designs 💫
                     </div>
                     <Patents />
+                  </div>
+                  <div className="mt-8" id="blogs">
+                    <div className="text-4xl mt-4text-cyan-300 font-[200]">
+                      My Blogs 💫
+                    </div>
+                    <Blogs />
                   </div>
                 </div>
               </div>
