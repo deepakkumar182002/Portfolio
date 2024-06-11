@@ -6,7 +6,6 @@ import { FaSquareWhatsapp } from 'react-icons/fa6';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io5';
-
 export default async function Post({ params }) {
   const supabase = initializeSupabase();
   const { id } = params;
@@ -65,7 +64,7 @@ export default async function Post({ params }) {
               width={500}
               height={500}
               src={firstblog.image1}
-              alt={firstblog.id}
+              alt="2"
             />
           </div>
 
