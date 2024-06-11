@@ -56,40 +56,40 @@ export default function Post() {
               Published on Tuesday, June 11 2024
             </p>
             <div className="flex flex-col md:flex-row p-1 text-3xl pb-2 gap-2">
-                <p className="text-gray-400 text-[16px]">Share my Blog on</p>
-                <div className="flex flex-row">
-              <a
-                href={shareUrl('whatsapp')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-500"
-              >
-                <FaSquareWhatsapp />
-              </a>
-              <a
-                href={shareUrl('twitter')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
-                <FaSquareXTwitter />
-              </a>
-              <a
-                href={shareUrl('facebook')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600"
-              >
-                <FaFacebookSquare />
-              </a>
-              <a
-                href={shareUrl('linkedin')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky-500"
-              >
-                <IoLogoLinkedin />
-              </a>
+              <p className="text-gray-400 text-[16px]">Share my Blog on</p>
+              <div className="flex flex-row">
+                <a
+                  href={shareUrl('whatsapp')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-500"
+                >
+                  <FaSquareWhatsapp />
+                </a>
+                <a
+                  href={shareUrl('twitter')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <FaSquareXTwitter />
+                </a>
+                <a
+                  href={shareUrl('facebook')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600"
+                >
+                  <FaFacebookSquare />
+                </a>
+                <a
+                  href={shareUrl('linkedin')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-500"
+                >
+                  <IoLogoLinkedin />
+                </a>
               </div>
             </div>
           </div>
