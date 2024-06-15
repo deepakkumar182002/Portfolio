@@ -64,7 +64,7 @@ export default function About() {
                   <span className="text-nowrap text-4xl"> 😊About me</span>
                 </div>
                 <div className="mt-4">
-                  <div className="-tracking-tighter text-justify font-[200]">
+                  <div className="-tracking-tighter text-justify font-[200] text-white">
                     Hello, I&apos;m{' '}
                     <span className="text-cyan-400 font-bold">
                       Deepak kumar

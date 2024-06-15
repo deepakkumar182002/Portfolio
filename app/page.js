@@ -25,35 +25,35 @@ function Home() {
       <div className="h-auto justify-center flex flex-col fixed z-50 top-[200px] left-4 md:left-3 md:top-64 gap-4">
         <Link
           href="#blogs"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
+          className="-inset-1 bg-gradient-to-r text-white from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
         >
           <FaBlog className="text-3xl md:text-4xl fixed " />
           <span className="text-xl relative left-10 ">Blogs</span>
         </Link>
         <Link
           href="#about"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
+          className="-inset-1 bg-gradient-to-r text-white from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
         >
           <CgUserlane className="text-3xl md:text-4xl fixed " />
           <span className="text-xl relative left-10 ">About</span>
         </Link>
         <Link
           href="#work"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center  md:w-12 w-10 overflow-hidden hover:w-28 duration-300"
+          className="-inset-1 bg-gradient-to-r text-white from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center  md:w-12 w-10 overflow-hidden hover:w-28 duration-300"
         >
           <GoProjectSymlink className="text-3xl md:text-4xl fixed" />
           <span className="text-xl relative left-10 ">Work</span>
         </Link>
         <Link
           href="#patents"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
+          className="-inset-1 bg-gradient-to-r text-white from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 overflow-hidden hover:w-32 duration-300"
         >
           <FaAward className="text-3xl md:text-4xl fixed" />
           <span className="text-xl relative left-10 ">Patents</span>
         </Link>
         <Link
           href="/paper"
-          className="-inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 text-nowrap overflow-hidden hover:w-72 duration-300"
+          className="-inset-1 bg-gradient-to-r text-white from-purple-600 to-pink-600 rounded-r-md ml-1 flex md:p-2 p-1 items-center md:w-12 w-10 text-nowrap overflow-hidden hover:w-72 duration-300"
         >
           <PiCertificate className="text-3xl md:text-4xl fixed" />
           <span className="text-xl relative left-10 ">
@@ -81,13 +81,13 @@ function Home() {
                   <About />
                   <Works />
                   <div className="mt-4" id="patents">
-                    <div className="text-4xl mt-4text-cyan-300 font-[200]">
+                    <div className="text-4xl mt-4text-cyan-300 font-[200] text-white">
                       My All Patents And Designs 💫
                     </div>
                     <Patents />
                   </div>
                   <div className="mt-8" id="blogs">
-                    <div className="text-4xl mt-4text-cyan-300 font-[200]">
+                    <div className="text-4xl mt-4text-cyan-300 font-[200] text-white">
                       My Blogs 💫
                     </div>
                     <Blogs />
