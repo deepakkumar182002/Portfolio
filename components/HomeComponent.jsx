@@ -58,7 +58,7 @@ export default function HomeComponent() {
                   <Link
                     data-aos="zoom-in"
                     className="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
-                    href="https://drive.google.com/file/d/1zMNJ71S6V5Ij8i8m2XBswaCwtt_sBtTJ/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1SqdVDlDUa3Rssr5m8QjRbnGx0C9hLxzK/view?usp=sharing"
                     target="_blank"
                   >
                     <svg
