@@ -54,7 +54,7 @@ export default function Post() {
             <Link
               data-aos="zoom-in"
               className="flex bg-white text-black font-[200] mx-auto justify-center shadow-lg shadow-black-500/40 p-4 text-xl"
-              href="https://drive.google.com/file/d/1zMNJ71S6V5Ij8i8m2XBswaCwtt_sBtTJ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1SqdVDlDUa3Rssr5m8QjRbnGx0C9hLxzK/view?usp=sharing"
               target="_blank"
             >
               View My Resume

@@ -183,7 +183,7 @@ export default function SpotlightCard() {
       <div className="relative font-inter antialiased items-center">
         <main className="relative min-h-screen flex justify-center flex-col bg-slate-900 overflow-hidden">
           <div className="md:w-scree flex flex-col md:flex-row md:px-6 py-10">
-            <Link href="https://freemepado.vercel.app/" data-aos="fade-right">
+            <Link href="https://freemaipadho.vercel.app/" data-aos="fade-right">
               <div
                 className="max-w-sm w-auto mx-auto items-center flex flex-col lg:max-w-none group"
                 data-spotlight
@@ -300,7 +300,7 @@ export default function SpotlightCard() {
                 </Link>
                 <Link
                   className="md:text-2xl text-cyan-600"
-                  href="https://freemepado.vercel.app/"
+                  href="https://freemaipadho.vercel.app/"
                 >
                   <BsBoxArrowUpRight />
                 </Link>
