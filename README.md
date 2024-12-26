@@ -57,7 +57,7 @@ Welcome to my portfolio! I'm a dedicated and detail-oriented **Front-end Softwar
 
 - **Phone**: [8273243959](tel:+918273243959)
 - **Email**: [deepakkumar2103133@dei.ac.in](mailto:deepakkumar2103133@dei.ac.in)
-- **LinkedIn**: [linkedin.com/in/deepak-kumar](https://linkedin.com/in/deepak-kumar)
+- **LinkedIn**: [linkedin.com/in/deepak-kumar](https://linkedin.com/in/deepakkumar182002)
 - **GitHub**: [github.com/deepakkumar182002](https://github.com/deepakkumar182002)
 
 ---
