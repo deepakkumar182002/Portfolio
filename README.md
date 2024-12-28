@@ -37,19 +37,22 @@ Welcome to my portfolio! I'm a dedicated and detail-oriented **Front-end Softwar
 ## 🖥️ Recent Projects
 
 ### **1. Face Recognition-Based Attendance Monitoring System**
+
 - **Description**: An intelligent attendance system using face recognition.
 - **Technologies**: Python, OpenCV, Pandas, Tkinter, NumPy
-- [View Project](#) *(Link coming soon!)*
+- [View Project](#) _(Link coming soon!)_
 
 ### **2. IoT Dashboard**
+
 - **Description**: Real-time IoT monitoring dashboard using Firebase.
 - **Technologies**: HTML, Tailwind CSS, JavaScript, Firebase
-- [View Project](#) *(Link coming soon!)*
+- [View Project](#) _(Link coming soon!)_
 
 ### **3. EdTech Website**
+
 - **Description**: A responsive educational platform for interactive learning.
 - **Technologies**: Next.js, Tailwind CSS
-- [View Project](#) *(Link coming soon!)*
+- [View Project](#) _(Link coming soon!)_
 
 ---
 
