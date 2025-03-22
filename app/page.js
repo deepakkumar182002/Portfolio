@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import { useEffect } from 'react';
 import Spotlight from '../utils/mouse-position';
 import Works from '@/components/Works';

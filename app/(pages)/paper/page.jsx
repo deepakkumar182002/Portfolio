@@ -68,7 +68,7 @@ export default function Patents() {
                     className="font-medium"
                   >
                     <div className="mt-4 md:text-right text-3xl text-center md:text-4xl font-bold">
-                      IEEE SCEECS'2024 Conference
+                      IEEE SCEECS&apos; 2024 Conference
                     </div>
                     <p>
                       <i>IEEE MANIT Student Branch</i>

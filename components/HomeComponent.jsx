@@ -39,7 +39,7 @@ export default function HomeComponent() {
                       floated={false}
                       className="h-80 bg-black z-10 opacity-40 hover:opacity-100 cursor-pointer duration-500"
                     >
-                      <Image src={Deep} alt="profile-picture" />
+                      <Image src={Deep} alt="profile-picture" priority/>
                     </CardHeader>
                   </Card>
                   <div className="grow mb-5 mt-4">
