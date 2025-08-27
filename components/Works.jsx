@@ -40,7 +40,7 @@ export default function SpotlightCard() {
     <>
       <div className="relative font-inter antialiased items-center" id="work">
         <main className="relative min-h-screen flex justify-center flex-col bg-slate-900 overflow-hidden">
-          <div className="md:w-scree flex flex-col md:flex-row md:px-6 py-24">
+          <div className="w-full flex flex-col md:flex-row px-4 md:px-6 py-12 sm:py-16 md:py-24">
             <Link
               href="https://agriculture-monitoring.netlify.app/"
               data-aos="fade-right"
@@ -49,8 +49,8 @@ export default function SpotlightCard() {
                 className="max-w-sm w-auto mx-auto items-center flex flex-col lg:max-w-none group"
                 data-spotlight
               >
-                <div className="relative h-full w-[350px] md:w-[700px] bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden">
-                  <div className="relative h-full w-[350px] md:w-[700px] bg-slate-900 p-4 rounded-[inherit] z-20 overflow-hidden">
+                <div className="relative h-full w-full max-w-[350px] md:max-w-[700px] bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden">
+                  <div className="relative h-full w-full bg-slate-900 p-2 sm:p-4 rounded-[inherit] z-20 overflow-hidden">
                     <div
                       className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
                       aria-hidden="true"
@@ -58,20 +58,25 @@ export default function SpotlightCard() {
                       <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
                     </div>
                     <div className="relative flex flex-col h-full items-center bg-slate-800 opacity-20 hover:opacity-100 duration-300 cursor-pointer text-center rounded-lg overflow-hidden">
-                      <Image src={Project1} className="relative z-10" alt="" />
+                      <Image
+                        src={Project1}
+                        className="relative z-10 w-full h-auto"
+                        alt="Agriculture Monitoring Project"
+                        priority
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </Link>
             <div
-              className="relative h-auto w-full z-30 md:right-20 p-4"
+              className="relative h-auto w-full z-30 md:right-20 p-2 sm:p-4"
               data-aos="fade-up"
             >
-              <h1 className="relative text-3xl font-[100] text-sky-400 text-center mt-4 md:float-right md:mt-10 md:mr-2">
+              <h1 className="relative text-xl sm:text-2xl md:text-3xl font-[100] text-sky-400 text-center mt-4 md:float-right md:mt-10 md:mr-2">
                 Featured Project
               </h1>
-              <Card className="z-30 w-full h-auto md:h-auto max-w-[760px] shadow-lg backdrop-blur-sm bg-slate-800/10 text-white mt-4">
+              <Card className="z-30 w-full h-auto md:h-auto max-w-full md:max-w-[760px] shadow-lg backdrop-blur-sm bg-slate-800/10 text-white mt-4">
                 <CardHeader floated={false} color="blue-gray">
                   <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
                   <IconButton
@@ -97,7 +102,7 @@ export default function SpotlightCard() {
                       color="blue-gray"
                       className="font-medium"
                     >
-                      <p className="mt-4 md:text-right text-3xl text-center md:text-4xl font-bold">
+                      <p className="mt-4 md:text-right text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
                         Agriculture Monitoring System{' '}
                       </p>
                     </Typography>
