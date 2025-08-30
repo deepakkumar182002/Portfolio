@@ -14,34 +14,37 @@ import hellydrone from '../public/hellidrone.png';
 function Patents() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 mt-4 sm:mt-8 px-2 sm:px-4">
         <div className="grid gap-4">
           <Link
             href="/patent1"
             className="flex justify-center items-center"
             data-aos="fade-right"
           >
-            <div className="md:text-2xl text-[8px] text-slate-700 absolute  md:backdrop-blur-sm md:bg-white/50 p-2">
+            <div className="text-xs sm:text-sm md:text-xl lg:text-2xl text-slate-700 absolute backdrop-blur-sm bg-white/30 sm:bg-white/50 p-1 sm:p-2">
               Granted
             </div>
             <Image
-              className="h-auto max-w-full rounded-lg object-cover object-center"
+              className="h-auto max-w-full rounded-lg object-cover object-center w-full"
               src={Circuitdesign}
-              alt="gallery-photo"
+              alt="Circuit Design Patent"
+              priority
             />
           </Link>
           <Link href="/" data-aos="fade-right">
             <Image
-              className="h-auto max-w-full rounded-lg object-cover object-center "
+              className="h-auto max-w-full rounded-lg object-cover object-center w-full"
               src={humandron}
-              alt="gallery-photo"
+              alt="Human Drone Patent"
+              loading="lazy"
             />
           </Link>
           <Link href="/" data-aos="fade-right">
             <Image
-              className="h-auto max-w-full rounded-lg object-cover object-center"
+              className="h-auto max-w-full rounded-lg object-cover object-center w-full"
               src={pantacopter}
-              alt="gallery-photo"
+              alt="Pantacopter Patent"
+              loading="lazy"
             />
           </Link>
         </div>

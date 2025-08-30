@@ -1,10 +1,17 @@
 'use client';
 import { IoLogoLinkedin } from 'react-icons/io5';
 import { FaGithubSquare } from 'react-icons/fa';
-import React, { useEffect } from 'react';
+import { HiMenu, HiX } from 'react-icons/hi';
+import React, { useEffect, useState } from 'react';
 import Spotlight from '../utils/mouse-position';
 import Link from 'next/link';
 function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   useEffect(() => {
     const spotlights = document.querySelectorAll('[data-spotlight]');
     spotlights.forEach((spotlight) => {
@@ -34,51 +41,127 @@ function Navbar() {
                   </div>
                 </Link>
               </div>
-              <div className="flex md:flex md:items-center md:justify-center md:gap-5">
+              {/* Desktop Menu */}
+              <div className="hidden md:flex md:items-center md:justify-center md:gap-5">
                 <Link
                   aria-current="page"
-                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
+                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:text-gray-500"
                   href="#"
                 >
                   Home
                 </Link>
                 <Link
                   aria-current="page"
-                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
+                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:text-gray-500"
                   href="#about"
                 >
                   About
                 </Link>
                 <Link
                   aria-current="page"
-                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
+                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:text-gray-500"
                   href="#work"
                 >
                   Work
                 </Link>
                 <Link
-                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200  hover:text-gray-500"
+                  className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:text-gray-500"
                   href="#patents"
                 >
                   Patents
                 </Link>
               </div>
+
+              {/* Social Icons - Desktop */}
               <div className="hidden md:flex items-center justify-end gap-3">
                 <Link
-                  className="md:text-2xl"
+                  className="text-white text-2xl hover:text-gray-400 transition-colors"
                   href="https://github.com/deepakkumar182002"
+                  aria-label="GitHub Profile"
                 >
                   <FaGithubSquare />
                 </Link>
                 <Link
-                  className="md:text-2xl"
+                  className="text-white text-2xl hover:text-gray-400 transition-colors"
                   href="https://www.linkedin.com/in/deepakkumar182002/"
+                  aria-label="LinkedIn Profile"
                 >
                   <IoLogoLinkedin />
                 </Link>
               </div>
+
+              {/* Mobile Menu Button */}
+              <div className="md:hidden flex items-center">
+                <button
+                  onClick={toggleMobileMenu}
+                  className="text-white p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white rounded-md"
+                  aria-expanded={mobileMenuOpen}
+                  aria-label="Toggle menu"
+                >
+                  {mobileMenuOpen ? (
+                    <HiX className="h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <HiMenu className="h-6 w-6" aria-hidden="true" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
+
+          {/* Mobile Menu Dropdown */}
+          {mobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900/95 backdrop-blur-md rounded-b-lg shadow-lg z-50 mt-2 p-4 border border-gray-800 transition-all duration-300 ease-in-out">
+              <div className="flex flex-col space-y-4">
+                <Link
+                  aria-current="page"
+                  className="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 rounded-md transition-colors"
+                  href="#"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Home
+                </Link>
+                <Link
+                  aria-current="page"
+                  className="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 rounded-md transition-colors"
+                  href="#about"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  About
+                </Link>
+                <Link
+                  aria-current="page"
+                  className="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 rounded-md transition-colors"
+                  href="#work"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Work
+                </Link>
+                <Link
+                  className="block px-3 py-2 text-base font-medium text-white hover:bg-gray-800 rounded-md transition-colors"
+                  href="#patents"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Patents
+                </Link>
+                <div className="flex items-center space-x-4 pt-2 border-t border-gray-700">
+                  <Link
+                    className="text-white text-xl hover:text-gray-400 transition-colors"
+                    href="https://github.com/deepakkumar182002"
+                    aria-label="GitHub Profile"
+                  >
+                    <FaGithubSquare />
+                  </Link>
+                  <Link
+                    className="text-white text-xl hover:text-gray-400 transition-colors"
+                    href="https://www.linkedin.com/in/deepakkumar182002/"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <IoLogoLinkedin />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </header>
     </>

@@ -29,42 +29,46 @@ export default function About() {
     <>
       <div className="relative font-inter antialiased" id="about">
         <main className="relative min-h-screen flex flex-col justify-start bg-slate-900 overflow-hidden">
-          <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+          <div className="w-full sm:w-fullo px-4 py-12 sm:py-16 md:py-24">
             <div
-              className="max-w-sm mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none group"
+              className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-6xl lg:3ax-w-none group"
               data-spotlight
             >
               <div
                 data-aos="fade-up"
                 className="relative h-full bg-slate-800 rounded-3xl p-px before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"
               >
-                <div className="relative  h-full bg-slate-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
+                <div className="relative h-full bg-slate-900 p-4 sm:p-6 pb-6 sm:pb-8 rounded-[inherit] z-20 overflow-hidden">
                   <div
                     className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
                     aria-hidden="true"
                   >
                     <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
                   </div>
-                  <div className="relative rounded-lg hover:bg-cyan-600 duration-300">
+                  <div className="relative rounded-lg hover:bg-cyan-600 duration-300 mx-auto max-w-xs">
                     <Image
                       src={deep}
-                      className="rounded-lg hover:opacity-70 cursor-pointer"
-                      alt=""
+                      className="rounded-lg hover:opacity-70 cursor-pointer w-full h-auto"
+                      alt="Deepak Kumar profile picture"
+                      priority
                     />
                   </div>
                 </div>
               </div>
 
               <div
-                className=" mt-2 md:ml-4 md:w-[600px] w-auto h-auto"
+                className="mt-4 sm:mt-2 md:ml-4 w-auto md:col-span-1 lg:col-span-2 h-auto"
                 data-aos="fade-left"
               >
                 <div className="text-xl font-bold text-white flex align-self">
                   <hr className="w-full h-1 bg-white mt-4" />
-                  <span className="text-nowrap text-4xl"> 😊About me</span>
+                  <span className="text-nowrap text-2xl sm:text-3xl md:text-4xl">
+                    {' '}
+                    😊About me
+                  </span>
                 </div>
                 <div className="mt-4">
-                  <div className="-tracking-tighter text-justify font-[200] text-white">
+                  <div className="-tracking-tighter text-justify font-[200] text-white text-sm sm:text-base">
                     Hello, I&apos;m{' '}
                     <span className="text-cyan-400 font-bold">
                       Deepak kumar
@@ -102,7 +106,7 @@ export default function About() {
                     intuitive user interfaces, I have consistently driven
                     projects from concept to deployment.
                   </div>
-                  <div className="pt-4 -tracking-tighter text-justify font-[200]">
+                  <div className="pt-4 -tracking-tighter text-justify text-white font-[200]">
                     Here are a few technologies I&apos;ve been working with
                     recently:
                   </div>
